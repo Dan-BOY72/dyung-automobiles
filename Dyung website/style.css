@@ -1,0 +1,143 @@
+/* Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00aaff;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00aaff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00aaff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #000000, #001f3f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .content h1 {
+  font-size: 3.5rem;
+  color: #00aaff;
+  margin-bottom: 15px;
+}
+
+.hero .content p {
+  font-size: 1.2rem;
+}
+
+/* Animated Divider Line */
+.line {
+  height: 4px;
+  background: linear-gradient(to right, #00aaff, #001f3f);
+  animation: slide 4s infinite alternate;
+}
+
+@keyframes slide {
+  0% { width: 20%; margin-left: 0; }
+  100% { width: 100%; margin-left: 0; }
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border: 2px solid #00aaff;
+  border-radius: 10px;
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+form button {
+  background: #00aaff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #0080cc;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: #001f3f;
+  color: #aaa;
+}
